@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html><html lang="en" dir="ltr" class="hydrated">
   <head>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
     <meta property="og:title" content="Google Plus" />
     <meta property="og:description" content="GooglePlusRedone by Hac3d! (https://github.com/hac" />
     <meta property="og:image" content="https://www.freeiconspng.com/uploads/google-plus-logo-google-plus-logo-23.png" />
@@ -1107,6 +1108,26 @@
                   <div class="Tu c-wa-Da">
                     <div class="so">Join Google+</div>
                     <div class="Ql">Sign in with your Google Account.</div><div class="qo"><div role="button" class="c-wa-Da b-a b-a-va iCU22b MG" tabindex="0">
+                          <div id="my-signin2"></div>
+  <script>
+    function onSuccess(googleUser) {
+      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+  </script>
                         <div class="OLjtUe">Sign in</div></div></div>
                     <div class="ZO">You need a Google Account to join Google+. Don't have one? <a class="c-C" href="https://web.archive.org/web/20120224234254/https://accounts.google.com/SignUp?service=oz&continue=https://plus.google.com/?gpcaz%3Df6b4490&hl=en-US">Create an account</a>
                     </div>
@@ -1144,6 +1165,7 @@
             <div class="L2BxNe ZN"><div class="aO c-wa-Da"><img data-savepage-currentsrc="https://web.archive.org/web/20120224234254im_/https://ssl.gstatic.com/s2/oz/images/language_icon.png" data-savepage-src="//web.archive.org/web/20120224234254im_/https://ssl.gstatic.com/s2/oz/images/language_icon.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAA3NCSVQICAjb4U/gAAAAV1BMVEX////5+fnw9vvu8P/c8P7K6P284v2o3/6s2fyW3f+n1vud1fyK1/542P6F0P9yz/1mzP9zxv5bxv1rwP9Qvvx4svthsvhLtfhHrfg6q/gwovcpnPYjlPQqqPB9AAAACXBIWXMAAArrAAAK6wGCiw1aAAAAlUlEQVQYV12KjRKCMAyDQ9kPsCkIk23F939OW1AP+e6aNGnRxulMNLjPwmgbwE263qAayY7zaGi/ajNR9L33vif9QkrJ+uTFRJ0Ycs6N/0KScEwQGz6plNJ04aAjSai1ulCDmKgTAzNneuwvdyrMe8ML2czZ0sLa5E2onYEZqq4LzLq9Tqwtfgxa4A+7XRu05doAT5k368cPOo2D/KgAAAAASUVORK5CYII=" alt="Language selection"></div> <select class="vHMoD bO c-wa-Da"><option value="ar">Arabic - ‫العربية‬</option><option value="bg">Bulgarian - ‪български‬</option><option value="ca">Catalan - ‪català‬</option><option value="zh-CN">Chinese (Simplified) - ‪中文（简体）‬</option><option value="zh-TW">Chinese (Traditional) - ‪繁體中文‬</option><option value="hr">Croatian - ‪hrvatski‬</option><option value="cs">Czech - ‪čeština‬</option><option value="da">Danish - ‪dansk‬</option><option value="nl">Dutch - ‪Nederlands‬</option><option value="en-GB">English (United Kingdom) - ‪English (United Kingdom)‬</option><option value="en" selected="">English (United States)</option><option value="et">Estonian - ‪eesti‬</option><option value="fil">Filipino - ‪Filipino‬</option><option value="fi">Finnish - ‪suomi‬</option><option value="fr">French (France) - ‪français (France)‬</option><option value="de">German - ‪Deutsch‬</option><option value="el">Greek - ‪Ελληνικά‬</option><option value="iw">Hebrew - ‫עברית‬</option><option value="hi">Hindi - ‪हिन्दी‬</option><option value="hu">Hungarian - ‪magyar‬</option><option value="id">Indonesian - ‪Bahasa Indonesia‬</option><option value="it">Italian - ‪italiano‬</option><option value="ja">Japanese - ‪日本語‬</option><option value="ko">Korean - ‪한국어‬</option><option value="lv">Latvian - ‪latviešu‬</option><option value="lt">Lithuanian - ‪lietuvių‬</option><option value="ms">Malay - ‪Bahasa Melayu‬</option><option value="no">Norwegian - ‪norsk‬</option><option value="fa">Persian - ‫فارسی‬</option><option value="pl">Polish - ‪polski‬</option><option value="pt-BR">Portuguese (Brazil) - ‪português (Brasil)‬</option><option value="pt-PT">Portuguese (Portugal) - ‪português (Portugal)‬</option><option value="ro">Romanian - ‪română‬</option><option value="ru">Russian - ‪русский‬</option><option value="sr">Serbian - ‪Српски‬</option><option value="sk">Slovak - ‪slovenčina‬</option><option value="sl">Slovenian - ‪slovenščina‬</option><option value="es-419">Spanish (Latin America) - ‪español (Latinoamérica)‬</option><option value="es">Spanish (Spain) - ‪español (España)‬</option><option value="sv">Swedish - ‪svenska‬</option><option value="th">Thai - ‪ไทย‬</option><option value="tr">Turkish - ‪Türkçe‬</option><option value="uk">Ukrainian - ‪українська‬</option><option value="vi">Vietnamese - ‪Tiếng Việt‬</option></select>
             </div>
             <div class="Rz">©2012 Google - <a href="https://web.archive.org/web/20120224234254/https://accounts.google.com/TOS?hl=en-US" target="_blank" class="c-C rHY6ob RG" title="">Terms</a> - <a href="https://web.archive.org/web/20120224234254/https://www.google.com/intl/en-US/+/policy/content.html" target="_blank" class="c-C rHY6ob RG" title="">Content Policy</a> - <a href="https://web.archive.org/web/20120224234254/https://www.google.com/intl/en-US/+/policy/" target="_blank" class="c-C KKDmjb RG" title="">Privacy Policy</a>
+            <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
             </div>
           </div>
         </div>
